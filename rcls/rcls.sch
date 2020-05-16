@@ -1,0 +1,234 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5EBF402A
+P 5250 2400
+F 0 "SW?" V 5296 2352 50  0000 R CNN
+F 1 "SW_Push" V 5205 2352 50  0000 R CNN
+F 2 "" H 5250 2600 50  0001 C CNN
+F 3 "" H 5250 2600 50  0001 C CNN
+	1    5250 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5EBF40FB
+P 5250 2750
+F 0 "D?" V 5288 2633 50  0000 R CNN
+F 1 "LED" V 5197 2633 50  0000 R CNN
+F 2 "" H 5250 2750 50  0001 C CNN
+F 3 "~" H 5250 2750 50  0001 C CNN
+	1    5250 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5EBF439A
+P 5250 3050
+F 0 "R?" H 5318 3096 50  0000 L CNN
+F 1 "R_US" H 5318 3005 50  0000 L CNN
+F 2 "" V 5290 3040 50  0001 C CNN
+F 3 "~" H 5250 3050 50  0001 C CNN
+	1    5250 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EBF43EC
+P 5250 3200
+F 0 "#PWR?" H 5250 2950 50  0001 C CNN
+F 1 "GND" H 5255 3027 50  0000 C CNN
+F 2 "" H 5250 3200 50  0001 C CNN
+F 3 "" H 5250 3200 50  0001 C CNN
+	1    5250 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 5EBF4429
+P 6000 3050
+F 0 "J?" H 6027 3026 50  0000 L CNN
+F 1 "Igniter_Conn" H 6027 2935 50  0000 L CNN
+F 2 "" H 6000 3050 50  0001 C CNN
+F 3 "~" H 6000 3050 50  0001 C CNN
+	1    6000 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 5EBF49FC
+P 6200 1500
+F 0 "J?" H 6227 1476 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 6227 1385 50  0000 L CNN
+F 2 "" H 6200 1500 50  0001 C CNN
+F 3 "~" H 6200 1500 50  0001 C CNN
+	1    6200 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EBF4B8E
+P 5800 1800
+F 0 "#PWR?" H 5800 1550 50  0001 C CNN
+F 1 "GND" H 5805 1627 50  0000 C CNN
+F 2 "" H 5800 1800 50  0001 C CNN
+F 3 "" H 5800 1800 50  0001 C CNN
+	1    5800 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 5EBF4C15
+P 5800 1100
+F 0 "#PWR?" H 5800 950 50  0001 C CNN
+F 1 "+BATT" H 5815 1273 50  0000 C CNN
+F 2 "" H 5800 1100 50  0001 C CNN
+F 3 "" H 5800 1100 50  0001 C CNN
+	1    5800 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 1600 5800 1600
+Wire Wire Line
+	5800 1600 5800 1800
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 5EBF4C95
+P 1600 1250
+F 0 "SW?" V 1646 1162 50  0000 R CNN
+F 1 "SW_SPST" V 1555 1162 50  0000 R CNN
+F 2 "" H 1600 1250 50  0001 C CNN
+F 3 "" H 1600 1250 50  0001 C CNN
+	1    1600 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6000 1500 5800 1500
+Wire Wire Line
+	5800 1500 5800 1100
+$Comp
+L power:+BATT #PWR?
+U 1 1 5EBF4DC8
+P 5250 2200
+F 0 "#PWR?" H 5250 2050 50  0001 C CNN
+F 1 "+BATT" H 5265 2373 50  0000 C CNN
+F 2 "" H 5250 2200 50  0001 C CNN
+F 3 "" H 5250 2200 50  0001 C CNN
+	1    5250 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 5EBF4DF6
+P 1600 1050
+F 0 "#PWR?" H 1600 900 50  0001 C CNN
+F 1 "+BATT" H 1615 1223 50  0000 C CNN
+F 2 "" H 1600 1050 50  0001 C CNN
+F 3 "" H 1600 1050 50  0001 C CNN
+	1    1600 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_Optical:TSOP384xx U?
+U 1 1 5EBF4F51
+P 1750 2400
+F 0 "U?" H 1737 2825 50  0000 C CNN
+F 1 "TSOP38538" H 1737 2734 50  0000 C CNN
+F 2 "OptoDevice:Vishay_MINICAST-3Pin" H 1700 2025 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/82491/tsop382.pdf" H 2400 2700 50  0001 C CNN
+	1    1750 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L canhw:MIC5504-3.3 U?
+U 1 1 5EBF5234
+P 3850 1800
+F 0 "U?" H 3875 1385 50  0000 C CNN
+F 1 "MIC5504-3.3" H 3875 1476 50  0000 C CNN
+F 2 "" H 3850 1800 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550x-300mA-Single-Output-LDO-in-Small-Packages-DS20006006A.pdf" H 3850 1800 50  0001 C CNN
+	1    3850 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L MCU_Microchip_ATtiny:ATtiny10-TS U?
+U 1 1 5EBF56E1
+P 3050 2800
+F 0 "U?" H 2520 2846 50  0000 R CNN
+F 1 "ATtiny10-TS" H 2520 2755 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 3050 2800 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8127-AVR-8-bit-Microcontroller-ATtiny4-ATtiny5-ATtiny9-ATtiny10_Datasheet.pdf" H 3050 2800 50  0001 C CNN
+	1    3050 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EBF583F
+P 3050 3400
+F 0 "#PWR?" H 3050 3150 50  0001 C CNN
+F 1 "GND" H 3055 3227 50  0000 C CNN
+F 2 "" H 3050 3400 50  0001 C CNN
+F 3 "" H 3050 3400 50  0001 C CNN
+	1    3050 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 2200 2400 2200
+Wire Wire Line
+	2400 2200 2400 2000
+Wire Wire Line
+	2400 2000 3050 2000
+Wire Wire Line
+	3050 2000 3050 2200
+Wire Wire Line
+	3400 1800 3300 1800
+Wire Wire Line
+	3300 1800 3300 2000
+Wire Wire Line
+	3300 2000 3050 2000
+Connection ~ 3050 2000
+$Comp
+L power:GND #PWR?
+U 1 1 5EBF60C4
+P 3050 1750
+F 0 "#PWR?" H 3050 1500 50  0001 C CNN
+F 1 "GND" H 3055 1577 50  0000 C CNN
+F 2 "" H 3050 1750 50  0001 C CNN
+F 3 "" H 3050 1750 50  0001 C CNN
+	1    3050 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 1600 3050 1600
+Wire Wire Line
+	3050 1600 3050 1750
+$Comp
+L power:+BATT #PWR?
+U 1 1 5EBF6290
+P 4700 1500
+F 0 "#PWR?" H 4700 1350 50  0001 C CNN
+F 1 "+BATT" H 4715 1673 50  0000 C CNN
+F 2 "" H 4700 1500 50  0001 C CNN
+F 3 "" H 4700 1500 50  0001 C CNN
+	1    4700 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 1500 4700 1800
+Wire Wire Line
+	4700 1800 4250 1800
+$EndSCHEMATC
